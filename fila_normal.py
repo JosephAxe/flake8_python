@@ -5,7 +5,7 @@ from constantes import CODIGO_NORMAL
 class FilaNormal(FilaBase):
 
     def gera_senha_atual(self) -> None:
-        self.senha_atual = f'${CODIGO_NORMAL}{self.codigo}'
+        self.senha_atual = f'{CODIGO_NORMAL}{self.codigo}'
 
     def atualiza_fila(self) -> None:
         self.reseta_fila()
